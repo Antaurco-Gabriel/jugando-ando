@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang = "es">
+    
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel = "stylesheet" type = "text/css" href = "demo.css">
+        <script src = "https://unpkg.com/vue@next"></script>
+        <title> Session 10 </title>
+    </head> 
+    
+    <body class = "letra fondo">
+        
+        <div id="v-model-checkbox" class="contenedor">
+            <h3 style = "font-weight: bold;"> # Checkbox </h3>
+
+            <input type="checkbox" id="checkbox" v-model="checked" />
+            <label for="checkbox">{{ checked }}</label>
+        </div>
+        
+    </body>
+
+    <script src = "./03-checkbox.js"></script>
+
+</html>

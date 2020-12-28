@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang = "es">
+    
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel = "stylesheet" type = "text/css" href = "demo.css">
+        <script src = "https://unpkg.com/vue@next"></script>
+        <title> Session 10 </title>
+    </head> 
+    
+    <body class = "letra fondo">
+        
+        <div id="v-model-radiobutton" class="contenedor">
+            <h3 style = "font-weight: bold;"> # Radio </h3>
+
+            <input type="radio" id="one" value="One" v-model="picked" />
+            <label for="one">One</label>
+            <br />
+            <input type="radio" id="two" value="Two" v-model="picked" />
+            <label for="two">Two</label>
+            <br />
+            <br />
+            <span>Picked: {{ picked }}</span>
+        </div>
+
+    </body>
+
+    <script src = "./05-Radio.js"></script>
+
+</html>

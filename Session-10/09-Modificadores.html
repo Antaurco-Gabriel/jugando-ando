@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang = "es">
+    
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel = "stylesheet" type = "text/css" href = "demo.css">
+        <script src = "https://unpkg.com/vue@next"></script>
+        <title> Binding en Formularios - Input </title>
+    </head> 
+    
+    <body class = "letra fondo">
+        
+        <!-- .lazy permite que el evento de enlace sea ejecutado una vez el input detecta el evento .change. -->
+        
+        <div id="v-model-lazy" class="contenedor">
+            <h3 style = "font-weight: bold;"> .lazy </h3>
+            <input v-model.lazy="msg" placeholder="edíteme" />
+            <p> El mensaje es: {{ msg }} </p>
+        </div>
+
+
+        <!-- .number permite obtener el valor de la entrada de datos convertido al tipo number de JavaScript. -->
+
+        <div id="v-model-number" class="contenedor">
+            <h3 style = "font-weight: bold;"> .number </h3>
+            <input v-model.number="age" type="number" min="0">
+            <p> El mensaje es: {{ age }} y su tipo: {{ typeof(age) }} </p>
+            <button v-on:click="doSomething(age)"> ver tipo </button>
+        </div>
+        
+        
+        <!-- .trim permite quitar espacios en blanco al comienzo y final de la entrada de datos. --> 
+        
+        <div id="v-model-trim" class="contenedor">
+            <h3 style = "font-weight: bold;"> .trim </h3>
+            <input v-model.trim="message" placeholder="edíteme" />
+            <p> El mensaje es: {{ message }} </p>
+        </div>
+            
+    </body>
+
+    <script src = "./09-Modificadores.js"></script>
+
+</html>

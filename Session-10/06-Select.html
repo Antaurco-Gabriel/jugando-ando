@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang = "es">
+    
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel = "stylesheet" type = "text/css" href = "demo.css">
+        <script src = "https://unpkg.com/vue@next"></script>
+        <title> Session 10 </title>
+    </head> 
+    
+    <body class = "letra fondo">
+
+        <div id="v-model-select" class="contenedor">
+            <select v-model="selected">
+                <h3 style = "font-weight: bold;"> # Select </h3>
+                <option disabled value="">Seleccione un elemento</option>
+                <option>A</option>
+                <option>B</option>
+                <option>C</option>
+            </select>
+            <br />
+            <br />
+            <span>Selected: {{ selected }}</span>
+
+            <!-- <select v-model="selected" multiple>
+                <h3 style = "font-weight: bold;"> # Select </h3>
+                <option>A</option>
+                <option>B</option>
+                <option>C</option>
+            </select>
+            <br />
+            <br />
+            <span>Selected: {{ selected }}</span> -->
+            
+        </div>
+        
+    </body>
+
+    <script src = "./06-Select.js"></script>
+
+</html>

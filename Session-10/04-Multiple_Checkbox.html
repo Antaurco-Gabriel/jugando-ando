@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang = "es">
+    
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel = "stylesheet" type = "text/css" href = "demo.css">
+        <script src = "https://unpkg.com/vue@next"></script>
+        <title> Session 10 </title>
+    </head> 
+    
+    <body class = "letra fondo">
+        
+        <div id="v-model-multiple-checkboxes" class="contenedor">
+            <h3 style = "font-weight: bold;"> # Multiple Checkbox </h3>
+
+            <input type="checkbox" id="jack" value="Jack" v-model="checkedNames" />
+            <label for="jack">Jack</label>
+            <input type="checkbox" id="john" value="John" v-model="checkedNames" />
+            <label for="john">John</label>
+            <input type="checkbox" id="mike" value="Mike" v-model="checkedNames" />
+            <label for="mike">Mike</label>
+            <br />
+            <br />
+            <span>Checked names: {{ checkedNames }}</span>
+        </div>
+        
+    </body>
+
+    <script src = "./04-Multiple_Checkbox.js"></script>
+
+</html>
